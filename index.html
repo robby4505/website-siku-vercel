@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PT Sinergi Insan Karya Utama | SIKU</title>
-  <<link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -28,7 +28,7 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero__content">
       <h1 class="hero__title">Sinergi Strategis untuk Pertumbuhan Bisnis Anda</h1>
@@ -40,7 +40,7 @@
     </div>
   </section>
 
-  <!-- ABOUT US SECTION (Full Width) -->
+  <!-- ABOUT US -->
   <section id="about" class="section section--light">
     <div class="container">
       <div class="section__header">
@@ -64,16 +64,13 @@
     </div>
   </section>
 
-  <!-- SPLIT LAYOUT CONTAINER (30% Sidebar - 70% Content) -->
-  <!-- Dimulai dari Jadwal Pelatihan hingga Blog -->
+  <!-- SPLIT LAYOUT (30% Sidebar - 70% Content) -->
   <div class="split-layout-wrapper">
     <div class="container split-layout-inner">
       
       <!-- SIDEBAR KIRI (30%) -->
       <aside class="split-sidebar">
-        
-        <!-- Widget 1: Judul & Filter Pelatihan -->
-        <div class="sidebar-widget sticky-top" id="widget-training">
+        <div class="sidebar-widget sticky-top">
           <h3 class="sidebar-heading">Jadwal Pelatihan</h3>
           <p class="sidebar-desc">Program pengembangan kompetensi tim Anda.</p>
           <div class="sidebar-filter">
@@ -82,24 +79,13 @@
               <option>Semua Pelatihan</option>
               <option>Manajemen</option>
               <option>HR & SDM</option>
-              <option>Administrasi</option>
             </select>
           </div>
         </div>
 
-        <!-- Widget 2: Judul & Filter Blog -->
-        <div class="sidebar-widget" id="widget-blog">
+        <div class="sidebar-widget">
           <h3 class="sidebar-heading">Artikel & Insights</h3>
           <p class="sidebar-desc">Wawasan terbaru seputar manajemen bisnis.</p>
-          <div class="sidebar-filter">
-            <label>Topik:</label>
-            <select id="blog-category" class="filter-select">
-              <option value="all">Semua Topik</option>
-              <option value="HR">HR & SDM</option>
-              <option value="ERP">Sistem & ERP</option>
-              <option value="Dev">Pengembangan</option>
-            </select>
-          </div>
           <div class="sidebar-archive">
             <h4>Arsip Terbaru</h4>
             <ul id="blog-archive" class="archive-list">
@@ -107,16 +93,14 @@
             </ul>
           </div>
         </div>
-
       </aside>
 
       <!-- KONTEN KANAN (70%) -->
       <main class="split-content">
         
-        <!-- BAGIAN 1: JADWAL PELATIHAN (CARD STYLE) -->
+        <!-- TRAINING CARDS -->
         <section id="training" class="content-section">
           <div class="training-cards-grid">
-            <!-- Card 1 -->
             <article class="training-card">
               <div class="training-card__image">
                 <img src="https://via.placeholder.com/400x200/0F172A/FFFFFF?text=KPI+%26+OKR" alt="KPI OKR">
@@ -133,7 +117,6 @@
               </div>
             </article>
 
-            <!-- Card 2 -->
             <article class="training-card">
               <div class="training-card__image">
                 <img src="https://via.placeholder.com/400x200/0F172A/FFFFFF?text=SOP+%26+Risk" alt="SOP Risk">
@@ -149,34 +132,14 @@
                 <a href="#" class="btn btn--outline btn-sm">Daftar</a>
               </div>
             </article>
-
-             <!-- Card 3 -->
-             <article class="training-card">
-              <div class="training-card__image">
-                <img src="https://via.placeholder.com/400x200/0F172A/FFFFFF?text=HR+Analytics" alt="HR Analytics">
-                <span class="badge">Coming Soon</span>
-              </div>
-              <div class="training-card__body">
-                <h3>In-House: HR Analytics & Payroll Compliance</h3>
-                <p>Optimalkan data SDM untuk keputusan strategis dan kepatuhan payroll.</p>
-                <div class="meta">
-                  <span>📅 Mei 2026</span>
-                  <span>💻 In-House Only</span>
-                </div>
-                <a href="#" class="btn btn--outline btn-sm">Hubungi</a>
-              </div>
-            </article>
           </div>
         </section>
 
-        <!-- SEPARATOR -->
         <div class="section-separator"></div>
 
-        <!-- BAGIAN 2: BLOG ARTICLES -->
+        <!-- BLOG ARTICLES -->
         <section id="blog" class="content-section">
           <div id="blog-cards-container" class="blog-cards-grid">
-            
-            <!-- Static Blog Card 1 -->
             <article class="blog-card">
               <div class="blog-card-header">
                 <span class="tag">Manajemen</span>
@@ -186,18 +149,6 @@
               <p>Bagaimana Objectives and Key Results membantu perusahaan beradaptasi dengan era industri 4.0 secara efektif...</p>
               <a href="#" class="read-more">Baca Selengkapnya →</a>
             </article>
-
-            <!-- Static Blog Card 2 -->
-            <article class="blog-card">
-              <div class="blog-card-header">
-                <span class="tag">SDM</span>
-                <span class="date">10 April 2026</span>
-              </div>
-              <h3 class="blog-card-title"><a href="#">Strategi Retensi Karyawan di Era Hybrid Work</a></h3>
-              <p>Tips menjaga loyalitas dan produktivitas tim ketika bekerja dilakukan sebagian dari rumah...</p>
-              <a href="#" class="read-more">Baca Selengkapnya →</a>
-            </article>
-
           </div>
         </section>
 
@@ -205,7 +156,7 @@
     </div>
   </div>
 
-  <!-- CTA SECTION (Full Width Again) -->
+  <!-- CTA -->
   <section class="cta">
     <div class="container cta__content">
       <h2 class="cta__title">Siap Tingkatkan Performa Bisnis Anda?</h2>
