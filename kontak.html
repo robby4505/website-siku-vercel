@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | SIKU - Konsultasi Manajemen & SDM</title>
+  <meta name="description" content="Hubungi tim ahli SIKU untuk konsultasi manajemen, SDM, dan pelatihan. Alamat kantor di Bandar Lampung.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <div id="header-placeholder"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__content">
+        <h1 class="hero__title" data-i18n="contact_title">Hubungi Kami</h1>
+        <p class="hero__desc" data-i18n="contact_desc">Siap mendiskusikan strategi HR, transformasi proses, atau kebutuhan pelatihan organisasi Anda?</p>
+      </div>
+    </section>
+
+    <!-- CONTACT INFO GRID -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-info-grid">
+          <div class="contact-card">
+            <div class="contact-card__icon">📍</div>
+            <h3 data-i18n="address_title">Alamat Kantor</h3>
+            <p>Jl. Sukardi Hamdani No. 27/11<br>Labuhan Ratu, Kota Bandar Lampung<br>Lampung, 35142</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card__icon">📞</div>
+            <h3 data-i18n="phone_title">Telepon & WhatsApp</h3>
+            <p><a href="tel:+6282278399722">+62 822-7839-9722</a></p>
+            <p><a href="https://wa.me/6282278399722" target="_blank" data-i18n="chat_wa">Chat via WhatsApp →</a></p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card__icon">📧</div>
+            <h3 data-i18n="email_title">Email Resmi</h3>
+            <p><a href="mailto:ptsiku.indonesia@gmail.com">ptsiku.indonesia@gmail.com</a></p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card__icon">🕒</div>
+            <h3 data-i18n="hours_title">Jam Operasional</h3>
+            <p data-i18n="hours_weekday">Senin – Jumat: 08.00 – 17.00 WIB</p>
+            <p data-i18n="hours_weekend">Sabtu – Minggu: Libur</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM & MAP SECTION -->
+    <section class="section" style="background: var(--bg-alt);">
+      <div class="container contact-split">
+        
+        <!-- FORMULIR (NETLIFY READY) -->
+        <div class="contact-form-wrapper">
+          <h2 class="section__title" style="text-align: left; margin-bottom: 0.5rem;" data-i18n="form_title">Kirim Pesan</h2>
+          <p style="margin-bottom: 1.5rem; color: var(--text-light);" data-i18n="form_desc">Isi formulir di bawah. Tim kami akan merespons dalam 1x24 jam kerja.</p>
+          
+          <form class="contact-form" name="kontak" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <!-- Honeypot for Spam Protection -->
+            <p style="display: none;">
+              <label>🤖 Jangan isi field ini: <input name="bot-field" /></label>
+            </p>
+            
+            <!-- Required hidden input for Netlify -->
+            <input type="hidden" name="form-name" value="kontak" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" data-i18n="form_name">Nama Lengkap *</label>
+                <input type="text" id="name" name="name" required placeholder="Contoh: Budi Santoso">
+              </div>
+              <div class="form-group">
+                <label for="company" data-i18n="form_company">Perusahaan / Instansi</label>
+                <input type="text" id="company" name="company" placeholder="Opsional">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email" data-i18n="form_email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="email@perusahaan.com">
+              </div>
+              <div class="form-group">
+                <label for="phone" data-i18n="form_phone">No. WhatsApp *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="08xx-xxxx-xxxx">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service" data-i18n="form_service">Layanan yang Diminati</label>
+              <select id="service" name="service">
+                <option value="" data-i18n="form_service_select">Pilih Layanan...</option>
+                <option value="Konsultasi Manajemen" data-i18n="opt_consult">Konsultasi Manajemen</option>
+                <option value="Pelatihan SDM" data-i18n="opt_training">Pelatihan & Sertifikasi</option>
+                <option value="Software NEXTUS" data-i18n="opt_software">Solusi Software (NEXTUS)</option>
+                <option value="Administrasi Kantor" data-i18n="opt_admin">Jasa Administrasi Kantor</option>
+                <option value="Lainnya" data-i18n="opt_other">Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" data-i18n="form_message">Pesan / Kebutuhan *</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Jelaskan secara singkat kebutuhan atau pertanyaan Anda..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" data-i18n="form_submit">Kirim Pesan</button>
+          </form>
+        </div>
+
+        <!-- PETA (EMBED GOOGLE MAPS) -->
+        <div class="contact-map">
+          <h3 class="section__title" style="text-align: left; margin-bottom: 1rem;" data-i18n="map_title">Lokasi Kantor</h3>
+          <div class="map-container">
+            <!-- Embed Google Maps -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.158437567894!2d105.2555!3d-5.4185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMjUnMDYuNiJTIDEwNcKwMTUnMjAuMCJF!5e0!3m2!1sen!2sid!4v1600000000000!5m2!1sen!2sid" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lokasi PT Sinergi Insan Karya Utama">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <h2 class="cta__title" data-i18n="cta_quick">Butuh Respon Cepat?</h2>
+        <p class="cta__desc" data-i18n="cta_quick_desc">Langsung hubungi kami via WhatsApp untuk diskusi awal tanpa komitmen.</p>
+        <a href="https://wa.me/6282278399722?text=Halo%20SIKU,%20saya%20ingin%20berkonsultasi%20layanan." class="btn btn--accent" target="_blank" rel="noopener" data-i18n="cta_wa">Chat WhatsApp Sekarang</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="components.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/chatbot.js"></script>
+</body>
+</html>

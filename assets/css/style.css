@@ -1,0 +1,281 @@
+/* ================= SPLIT LAYOUT (30% SIDEBAR - 70% CONTENT) ================= */
+.split-layout-wrapper {
+  background-color: #f8fafc; /* Background abu-abu muda untuk area split */
+  padding: 4rem 0;
+}
+
+.split-layout-inner {
+  display: grid;
+  grid-template-columns: 30% 70%; /* Pembagian 30 Kiri, 70 Kanan */
+  gap: 3rem;
+  align-items: start;
+}
+
+/* --- SIDEBAR STYLES --- */
+.split-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar-widget {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* Sticky effect agar widget tetap terlihat saat scroll konten kanan */
+.sticky-top {
+  position: sticky;
+  top: 100px; /* Jarak dari atas layar saat sticky */
+}
+
+.sidebar-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.sidebar-desc {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-filter label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.5rem;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: inherit;
+  margin-bottom: 1rem;
+}
+
+.sidebar-archive h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.archive-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.archive-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.archive-list li:last-child {
+  border-bottom: none;
+}
+
+.archive-list a {
+  color: #475569;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.archive-list a:hover {
+  color: #d4af37;
+  padding-left: 5px;
+}
+
+/* --- CONTENT RIGHT SIDE STYLES --- */
+.content-section {
+  margin-bottom: 2rem;
+}
+
+/* Training Cards Grid inside 70% area */
+.training-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsif di dalam kolom 70% */
+  gap: 1.5rem;
+}
+
+.training-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.training-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.training-card__image {
+  position: relative;
+  height: 180px;
+}
+
+.training-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #d4af37;
+  color: #0f172a;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.training-card__body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.training-card__body h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.training-card__body p {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #475569;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Blog Cards inside 70% area */
+.blog-cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blog-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  border-color: #d4af37;
+}
+
+.blog-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.blog-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.blog-card-title a {
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.blog-card-title a:hover {
+  color: #d4af37;
+}
+
+.read-more {
+  color: #d4af37;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.section-separator {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+  margin: 3rem 0;
+}
+
+/* Responsive for Split Layout */
+@media (max-width: 992px) {
+  .split-layout-inner {
+    grid-template-columns: 1fr; /* Stack vertically on tablet/mobile */
+    gap: 2rem;
+  }
+  
+  .split-sidebar {
+    order: 2; /* Pindahkan sidebar ke bawah konten di mobile jika diinginkan, atau biarkan default (atas) */
+    /* Jika ingin sidebar tetap di atas, hapus baris 'order: 2' */
+  }
+  
+  .sticky-top {
+    position: static; /* Remove sticky on mobile */
+  }
+}

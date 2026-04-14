@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Meningkatkan Kepuasan Karyawan dengan Employee Engagement",
+    "category": "HR",
+    "excerpt": "Strategi engagement untuk karyawan yang lebih termotivasi dan produktif dalam organisasi modern.",
+    "date": "2026-04-11",
+    "url": "assets/blog/article-1.html"
+  },
+  {
+    "id": 2,
+    "title": "ERP untuk Usaha Kecil: Implementasi dan Keuntungan",
+    "category": "ERP",
+    "excerpt": "Langkah praktis mengadopsi sistem ERP untuk bisnis kecil agar proses lebih terintegrasi dan efisien.",
+    "date": "2026-04-11",
+    "url": "assets/blog/article-2.html"
+  },
+  {
+    "id": 3,
+    "title": "Strategi Rekrutmen Modern untuk SDM Unggul",
+    "category": "SDM",
+    "excerpt": "Metode perekrutan terbaru untuk menemukan talenta yang tepat dan mempertahankan karyawan berkinerja tinggi.",
+    "date": "2026-04-11",
+    "url": "assets/blog/article-3.html"
+  },
+  {
+    "id": 4,
+    "title": "Digitalisasi Payroll dan Kepatuhan Pajak",
+    "category": "Administrasi",
+    "excerpt": "Cara mengotomasi payroll sambil memastikan kepatuhan pajak dan peraturan ketenagakerjaan.",
+    "date": "2026-04-11",
+    "url": "assets/blog/article-4.html"
+  },
+  {
+    "id": 5,
+    "title": "Transformasi HR dengan HRIS dan Automasi",
+    "category": "HR",
+    "excerpt": "Manfaat HRIS untuk proses SDM yang lebih cepat, transparan, dan data-driven.",
+    "date": "2026-04-11",
+    "url": "assets/blog/article-5.html"
+  },
+  {
+    "id": 6,
+    "title": "ERP Terintegrasi untuk Operasional Efisien",
+    "category": "ERP",
+    "excerpt": "Implementasi ERP yang mendukung operasi, gudang, keuangan, dan pengambilan keputusan real-time.",
+    "date": "2026-04-11",
+    "url": "assets/blog/article-6.html"
+  },
+  {
+    "id": 7,
+    "title": "Pengukuran Produktivitas melalui KPI dan OKR",
+    "category": "SDM",
+    "excerpt": "Bagaimana KPI dan OKR membantu tim mencapai tujuan bisnis dengan fokus dan akuntabilitas.",
+    "date": "2026-04-11",
+    "url": "assets/blog/article-7.html"
+  },
+  {
+    "id": 8,
+    "title": "Manajemen Risiko Bisnis untuk Perusahaan Mikro",
+    "category": "Administrasi",
+    "excerpt": "Tips mengelola risiko operasional dan kepatuhan bagi usaha mikro dan kecil.",
+    "date": "2026-04-11",
+    "url": "assets/blog/article-8.html"
+  },
+  {
+    "id": 9,
+    "title": "Pelatihan Kompetensi untuk Talenta Digital",
+    "category": "HR",
+    "excerpt": "Program pelatihan yang efektif untuk meningkatkan kemampuan digital dan soft skills tim Anda.",
+    "date": "2026-04-11",
+    "url": "assets/blog/article-9.html"
+  },
+  {
+    "id": 10,
+    "title": "Optimalisasi Biaya SDM dan Proses Administratif",
+    "category": "Administrasi",
+    "excerpt": "Strategi memotong biaya SDM tanpa mengorbankan kualitas layanan dan kepuasan karyawan.",
+    "date": "2026-04-11",
+    "url": "assets/blog/article-10.html"
+  }
+]
