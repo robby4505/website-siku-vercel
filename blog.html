@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Insights | SIKU</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER (Sama seperti index.html) -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__brand">
+        <img src="assets/images/logo-siku.png" alt="Logo SIKU" class="header__logo">
+        <span class="header__name">PT SINERGI INSAN KARYA UTAMA</span>
+      </a>
+      <button class="header__toggle" aria-label="Menu">☰</button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About Us</a></li>
+          <li><a href="training-reguler.html" class="nav__link">Training Reguler</a></li>
+          <li><a href="inhouse-training.html" class="nav__link">Inhouse Training</a></li>
+          <li><a href="testimony.html" class="nav__link">Testimony</a></li>
+          <li><a href="blog.html" class="nav__link active">Blog</a></li>
+          <li><a href="career.html" class="nav__link">Career</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO BLOG -->
+  <section class="hero" style="padding-top: 12rem; padding-bottom: 4rem;">
+    <div class="container hero__content">
+      <h1 class="hero__title">Blog & Insights</h1>
+      <p class="hero__desc">Wawasan terbaru seputar manajemen bisnis & SDM.</p>
+    </div>
+  </section>
+
+  <!-- SPLIT LAYOUT -->
+  <div class="split-layout-wrapper">
+    <div class="container split-layout-inner">
+      
+      <!-- SIDEBAR 30% -->
+      <aside class="split-sidebar">
+        <div class="sidebar-widget sticky-top">
+          <h3 class="sidebar-heading">Kategori</h3>
+          <select class="filter-select">
+            <option>Semua Kategori</option>
+            <option>Manajemen</option>
+            <option>HR & SDM</option>
+          </select>
+        </div>
+        <div class="sidebar-widget">
+          <h3 class="sidebar-heading">Arsip</h3>
+          <ul class="archive-list">
+            <li><a href="#">April 2026</a></li>
+            <li><a href="#">Maret 2026</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- CONTENT 70% -->
+      <main class="split-content">
+        <div class="blog-cards-grid">
+          
+          <!-- Artikel 1 -->
+          <article class="blog-card">
+            <div class="blog-card-header">
+              <span class="tag">Manajemen</span>
+              <span class="date">14 April 2026</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="assets/blog/artikel-restrukturisasi.html">
+                5 Tanda Perusahaan Anda Membutuhkan Restrukturisasi Organisasi
+              </a>
+            </h3>
+            <p>Apakah alur keputusan di perusahaan Anda semakin lambat? Simak tanda-tanda krusial kapan saatnya melakukan restrukturisasi.</p>
+            <a href="assets/blog/artikel-restrukturisasi.html" class="read-more">Baca Selengkapnya →</a>
+          </article>
+
+          <!-- Artikel Dummy Lainnya -->
+          <article class="blog-card">
+            <div class="blog-card-header">
+              <span class="tag">HR & SDM</span>
+              <span class="date">12 April 2026</span>
+            </div>
+            <h3 class="blog-card-title"><a href="#">Strategi Retensi Karyawan Gen-Z</a></h3>
+            <p>Cara menjaga loyalitas tim di era hybrid work.</p>
+            <a href="#" class="read-more">Baca Selengkapnya →</a>
+          </article>
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- FOOTER (Sama seperti index.html) -->
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <img src="assets/images/logo-siku.png" alt="Logo SIKU Footer" class="footer__logo">
+        <div class="footer__info">
+          <p class="footer__company">PT SINERGI INSAN KARYA UTAMA</p>
+          <p class="footer__legal">NIB: 0904250066404</p>
+        </div>
+      </div>
+      <div class="footer__section">
+        <h4 class="footer__nav-title">Navigasi</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h4 class="footer__contact-title">Kontak</h4>
+        <address class="footer__contact">
+          <p>📍 Jl. Sukardi Handani No 11/27. Labuhan Ratu, Bandar Lampung</p>
+          <p>📞 0822-7839-9722</p>
+        </address>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; 2026 PT Sinergi Insan Karya Utama. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chatbot.js"></script>
+</body>
+</html>

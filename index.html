@@ -14,15 +14,17 @@
     <div class="container header__inner">
       <a href="index.html" class="header__brand">
         <img src="assets/images/logo-siku.png" alt="Logo SIKU" class="header__logo">
-        <span class="header__name">SIKU</span>
+        <span class="header__name">PT SINERGI INSAN KARYA UTAMA</span>
       </a>
       <button class="header__toggle" aria-label="Menu">☰</button>
       <nav class="nav">
         <ul class="nav__list">
-          <li><a href="#about" class="nav__link">About Us</a></li>
-          <li><a href="#training" class="nav__link">Training</a></li>
-          <li><a href="#blog" class="nav__link">Blog</a></li>
-          <li><a href="#career" class="nav__link">Career</a></li>
+          <li><a href="index.html" class="nav__link active">Home</a></li>
+          <li><a href="training-reguler.html" class="nav__link">Training Reguler</a></li>
+          <li><a href="inhouse-training.html" class="nav__link">Inhouse Training</a></li>
+          <li><a href="testimony.html" class="nav__link">Testimony</a></li>
+          <li><a href="blog.html" class="nav__link">Blog</a></li>
+          <li><a href="career.html" class="nav__link">Career</a></li>
         </ul>
       </nav>
     </div>
@@ -45,7 +47,8 @@
     <div class="container">
       <div class="section__header">
         <h2 class="section__title">Tentang Kami</h2>
-        <p class="section__desc">Mitra strategis dalam transformasi operasional & SDM.</p>
+        <p class="section__desc">
+          PT Sinergi Insan Karya Utama (SIKU) hadir sebagai mitra strategis transformasi bisnis Indonesia. Menggabungkan kearifan lokal dan standar global, filosofi kami terinspirasi dari "Siku Keluang" yang melambangkan ketahanan serta presisi sudut 90° yang menjamin ketepatan dan integritas.</p>
       </div>
       <div class="about__grid">
         <div class="about__card">
@@ -64,97 +67,29 @@
     </div>
   </section>
 
-  <!-- SPLIT LAYOUT (30% Sidebar - 70% Content) -->
-  <div class="split-layout-wrapper">
-    <div class="container split-layout-inner">
-      
-      <!-- SIDEBAR KIRI (30%) -->
-      <aside class="split-sidebar">
-        <div class="sidebar-widget sticky-top">
-          <h3 class="sidebar-heading">Jadwal Pelatihan</h3>
-          <p class="sidebar-desc">Program pengembangan kompetensi tim Anda.</p>
-          <div class="sidebar-filter">
-            <label>Kategori:</label>
-            <select class="filter-select">
-              <option>Semua Pelatihan</option>
-              <option>Manajemen</option>
-              <option>HR & SDM</option>
-            </select>
-          </div>
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Layanan Unggulan</h2>
+        <p class="section__desc">Solusi komprehensif sesuai KBLI: 70209, 78300, 82110 & 85500.</p>
+      </div>
+      <div class="about__grid">
+        <div class="about__card">
+          <h3>📊 Konsultasi Manajemen</h3>
+          <p>Perancangan KPI, OKR, SOP, dan Risk Management.</p>
         </div>
-
-        <div class="sidebar-widget">
-          <h3 class="sidebar-heading">Artikel & Insights</h3>
-          <p class="sidebar-desc">Wawasan terbaru seputar manajemen bisnis.</p>
-          <div class="sidebar-archive">
-            <h4>Arsip Terbaru</h4>
-            <ul id="blog-archive" class="archive-list">
-              <li><a href="#">Memuat arsip...</a></li>
-            </ul>
-          </div>
+        <div class="about__card">
+          <h3>👥 Manajemen SDM</h3>
+          <p>Rekrutmen, HR outsourcing, payroll system.</p>
         </div>
-      </aside>
-
-      <!-- KONTEN KANAN (70%) -->
-      <main class="split-content">
-        
-        <!-- TRAINING CARDS -->
-        <section id="training" class="content-section">
-          <div class="training-cards-grid">
-            <article class="training-card">
-              <div class="training-card__image">
-                <img src="https://via.placeholder.com/400x200/0F172A/FFFFFF?text=KPI+%26+OKR" alt="KPI OKR">
-                <span class="badge">Coming Soon</span>
-              </div>
-              <div class="training-card__body">
-                <h3>Workshop Penyusunan KPI & OKR Strategis</h3>
-                <p>Pelajari cara menyusun indikator kinerja utama yang selaras dengan strategi bisnis.</p>
-                <div class="meta">
-                  <span>📅 Maret 2026</span>
-                  <span>💻 Online / Offline</span>
-                </div>
-                <a href="#" class="btn btn--outline btn-sm">Daftar</a>
-              </div>
-            </article>
-
-            <article class="training-card">
-              <div class="training-card__image">
-                <img src="https://via.placeholder.com/400x200/0F172A/FFFFFF?text=SOP+%26+Risk" alt="SOP Risk">
-                <span class="badge">Coming Soon</span>
-              </div>
-              <div class="training-card__body">
-                <h3>Pelatihan SOP & Risk Management Berbasis ISO</h3>
-                <p>Bangun sistem operasi standar yang tahan banting dan minim risiko kesalahan.</p>
-                <div class="meta">
-                  <span>📅 April 2026</span>
-                  <span>💻 Online / Offline</span>
-                </div>
-                <a href="#" class="btn btn--outline btn-sm">Daftar</a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <div class="section-separator"></div>
-
-        <!-- BLOG ARTICLES -->
-        <section id="blog" class="content-section">
-          <div id="blog-cards-container" class="blog-cards-grid">
-            <article class="blog-card">
-              <div class="blog-card-header">
-                <span class="tag">Manajemen</span>
-                <span class="date">12 April 2026</span>
-              </div>
-              <h3 class="blog-card-title"><a href="#">Pentingnya OKR dalam Transformasi Digital</a></h3>
-              <p>Bagaimana Objectives and Key Results membantu perusahaan beradaptasi dengan era industri 4.0 secara efektif...</p>
-              <a href="#" class="read-more">Baca Selengkapnya →</a>
-            </article>
-          </div>
-        </section>
-
-      </main>
+        <div class="about__card">
+          <h3>📁 Jasa Administrasi</h3>
+          <p>Virtual assistant & dukungan back-office terstruktur.</p>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- CTA -->
   <section class="cta">
@@ -169,7 +104,7 @@
   <footer class="footer">
     <div class="container footer__top">
       <div class="footer__brand">
-        <img src="assets/images/logo-siku.png" alt="Logo" class="footer__logo">
+        <img src="assets/images/logo-siku.png" alt="Logo SIKU Footer" class="footer__logo">
         <div class="footer__info">
           <p class="footer__company">PT SINERGI INSAN KARYA UTAMA</p>
           <p class="footer__legal">NIB: 0904250066404</p>
@@ -178,16 +113,17 @@
       <div class="footer__section">
         <h4 class="footer__nav-title">Navigasi</h4>
         <ul class="footer__links">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#training">Training</a></li>
-          <li><a href="#blog">Blog</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="training-reguler.html">Training</a></li>
+          <li><a href="blog.html">Blog</a></li>
         </ul>
       </div>
       <div class="footer__section">
         <h4 class="footer__contact-title">Kontak</h4>
         <address class="footer__contact">
-          <p>📍 Jakarta, Indonesia</p>
+          <p>📍 Jl. Sukardi Handani No 11/27. Labuhan Ratu, Bandar Lampung</p>
           <p>📞 0822-7839-9722</p>
+          <p>✉️ ptsiku.indonesia@gmail.com</p>
         </address>
       </div>
     </div>

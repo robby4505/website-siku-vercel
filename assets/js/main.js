@@ -1,68 +1,35 @@
-/**
- * SIKU - Main JavaScript
- * Entry point untuk inisialisasi website
- */
-
 document.addEventListener('DOMContentLoaded', () => {
-  initBlogArchive();
   console.log('✅ SIKU website loaded');
-});
-
-async function initBlogArchive() {
-  const archiveList = document.getElementById('blog-archive');
-  const categorySelect = document.getElementById('blog-category');
-  if (!archiveList || !categorySelect) return;
-
-  try {
-    const response = await fetch('assets/data/blog-archive.json');
-    const posts = await response.json();
-    const articles = posts.slice(0, 10);
-
-    renderBlogArchive(articles, archiveList);
-
-    categorySelect.addEventListener('change', () => {
-      const selected = categorySelect.value;
-      const filtered = selected === 'all' ? articles : articles.filter(post => post.category === selected);
-      renderBlogArchive(filtered, archiveList);
+  
+  // Mobile Menu Toggle
+  const toggleBtn = document.querySelector('.header__toggle');
+  const nav = document.querySelector('.nav');
+  
+  if (toggleBtn && nav) {
+    toggleBtn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      toggleBtn.textContent = nav.classList.contains('open') ? '✕' : '☰';
     });
-  } catch (error) {
-    console.error('Gagal memuat arsip blog:', error);
-  }
-}
-
-function renderBlogArchive(posts, container) {
-  container.innerHTML = '';
-  if (!posts.length) {
-    container.innerHTML = '<li class="blog-archive-item">Tidak ada artikel untuk kategori ini.</li>';
-    return;
   }
 
-  posts.forEach(post => {
-    const item = document.createElement('li');
-    item.className = 'blog-archive-item';
-    item.innerHTML = `<a href="${post.url}">${post.title}</a>`;
-    container.appendChild(item);
+  // Smooth Scroll for Anchor Links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        if (nav && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          toggleBtn.textContent = '☰';
+        }
+        
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      }
+    });
   });
-}
-
-function renderBlogCards(posts, container) {
-  container.innerHTML = '';
-  if (!posts.length) {
-    container.innerHTML = '<p>Belum ada artikel untuk kategori ini.</p>';
-    return;
-  }
-
-  posts.forEach(post => {
-    const card = document.createElement('article');
-    card.className = 'blog-card';
-    card.innerHTML = `
-      <div class="blog-card-title"><a href="${post.url}">${post.title}</a></div>
-      <p>${post.excerpt}</p>
-      <div class="blog-card-meta">
-        <span>📅 ${post.date}</span>
-        <span>🏷️ ${post.category}</span>
-      </div>
-    `;
-    container.appendChild(card);
-  });
-}
+});
