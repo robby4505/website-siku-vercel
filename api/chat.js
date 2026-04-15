@@ -1,5 +1,8 @@
 // api/chat.js (SERVER SIDE)
+// Pastikan isi file INI, bukan kode widget tampilan
+
 export default async function handler(req, res) {
+  // Hanya izinkan method POST
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
@@ -10,22 +13,23 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Message is required' });
     }
 
+    // Ambil API Key dari .env.local
     const apiKey = process.env.OPENROUTER_API_KEY;
-    
-    // Menggunakan Qwen 2.5 7B sesuai permintaan Anda
-    const model = 'qwen/qwen-2.5-7b-instruct'; 
+    const model = 'minimax/minimax-m2.5'; 
 
     if (!apiKey) {
+      console.error('❌ OPENROUTER_API_KEY tidak ditemukan di .env.local');
       return res.status(500).json({ error: 'API key not configured' });
     }
 
+    // Panggil OpenRouter API
     const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
         'HTTP-Referer': 'http://localhost:3000',
-        'X-Title': 'SIKU Local Dev'
+        'X-Title': 'SIKU Chatbot'
       },
       body: JSON.stringify({
         model: model,
@@ -42,7 +46,7 @@ export default async function handler(req, res) {
     });
 
     if (!response.ok) {
-      const err = await response.json();
+      const err = await response.json().catch(() => ({}));
       return res.status(response.status).json({ error: err.error?.message || 'OpenRouter API error' });
     }
 
