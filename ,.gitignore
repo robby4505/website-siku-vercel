@@ -1,5 +1,19 @@
+# Dependencies
 node_modules/
+
+# Environment variables
 .env.local
+.env*.local
+
+# Build output
 .vercel
-*.log
+.next
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
