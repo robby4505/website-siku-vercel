@@ -13,12 +13,12 @@ module.exports = async function handler(req, res) {
       return res.status(400).json({ error: 'Message is required' });
     }
 
-    // Ambil API Key dari .env.local
-    const apiKey = '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';
+    // Ambil API Key dari environment variable
+    const apiKey = process.env.OPENROUTER_API_KEY || process.env.sisiku;
     const model = 'nvidia/nemotron-3-super-120b-a12b:free';
 
     if (!apiKey) {
-      console.error('❌ OPENROUTER_API_KEY tidak ditemukan di .env.local');
+      console.error('❌ OPENROUTER_API_KEY / sisiku tidak ditemukan. Setel di .env.local untuk lokal atau di Vercel Environment Variables untuk deploy.');
       return res.status(500).json({ error: 'API key not configured' });
     }
 
