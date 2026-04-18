@@ -1,7 +1,7 @@
 // api/chat.js (SERVER SIDE)
 // Pastikan isi file INI, bukan kode widget tampilan
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // Hanya izinkan method POST
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -14,8 +14,8 @@ export default async function handler(req, res) {
     }
 
     // Ambil API Key dari .env.local
-    const apiKey = process.env.OPENROUTER_API_KEY;
-    const model = 'minimax/minimax-m2.5'; 
+    const apiKey = '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';
+    const model = 'nvidia/nemotron-3-super-120b-a12b:free';
 
     if (!apiKey) {
       console.error('❌ OPENROUTER_API_KEY tidak ditemukan di .env.local');
